@@ -1,0 +1,15 @@
+{
+  "name": "ai_front",
+  "private": true,
+  "packageManager": "pnpm@8.15.4",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "lint": "pnpm --filter web lint",
+    "test": "pnpm --filter web test"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
+}
