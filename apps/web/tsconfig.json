@@ -1,0 +1,57 @@
+{
+  "extends": "../../tsconfig.settings.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "noEmit": true,
+    "moduleResolution": "Bundler",
+    "module": "ESNext",
+    "baseUrl": ".",
+    "paths": {
+      "@ai-front/domain": [
+        "../../packages/domain/src"
+      ],
+      "@ai-front/domain/*": [
+        "../../packages/domain/src/*"
+      ],
+      "@ai-front/transport": [
+        "../../packages/transport/src"
+      ],
+      "@ai-front/transport/*": [
+        "../../packages/transport/src/*"
+      ],
+      "@ai-front/ui": [
+        "../../packages/ui/src"
+      ],
+      "@ai-front/ui/*": [
+        "../../packages/ui/src/*"
+      ],
+      "@ai-front/renderers": [
+        "../../packages/renderers/src"
+      ],
+      "@ai-front/renderers/*": [
+        "../../packages/renderers/src/*"
+      ],
+      "@ai-front/plugin-sdk": [
+        "../../packages/plugin-sdk/src"
+      ],
+      "@ai-front/plugin-sdk/*": [
+        "../../packages/plugin-sdk/src/*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "incremental": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

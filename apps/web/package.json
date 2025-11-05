@@ -1,0 +1,35 @@
+{
+  "name": "web",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ai-front/domain": "workspace:*",
+    "@ai-front/plugin-sdk": "workspace:*",
+    "@ai-front/renderers": "workspace:*",
+    "@ai-front/transport": "workspace:*",
+    "@ai-front/ui": "workspace:*",
+    "@tanstack/react-query": "^5.24.0",
+    "clsx": "^2.0.0",
+    "next": "13.5.6",
+    "nanoid": "^4.0.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "zustand": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.10.6",
+    "@types/react": "18.2.45",
+    "@types/react-dom": "18.2.18",
+    "autoprefixer": "10.4.16",
+    "postcss": "8.4.31",
+    "tailwindcss": "3.3.5",
+    "typescript": "5.3.3"
+  }
+}
